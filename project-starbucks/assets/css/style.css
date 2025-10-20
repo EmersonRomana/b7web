@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+header .line {
+  background-color: #117050;
+  height: 10px;
+  width: 100%;
+}
+
+.container {
+  max-width: 1440px;
+  margin-inline: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+
+.header-esquerda img {
+  width: 60px;
+  height: 60px;
+}
+
+.header-buscar form {
+  display: flex;
+}
+
+.header-buscar input {
+  font-size: 16px;
+  padding: 7px 10px;
+  border: 1px solid #eaeaea;
+  outline: none;
+  width: 100%;
+  max-width: 220px;
+  border-radius: 4px;
+}
+
+.header-buscar button {
+  background-color: transparent;
+  border: none;
+  margin-left: -30px;
+  padding-top: 3px;
+  padding-inline: 5px 7px;
+  cursor: pointer;
+  transition: all 6ms ease;
+}
+
+.header-direita {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.header-buscar button:hover {
+  outline: 3px solid #292929c0;
+  border-radius: 4px;
+}
+
+.header-buscar button:active {
+  scale: calc(0.95);
+}
+
+.header-buscar button img {
+  width: 16px;
+  height: 16px;
+}
+
+.header-direita .menu {
+  cursor: pointer;
+}
+
+.header-direita .menu img {
+  width: 20px;
+}
