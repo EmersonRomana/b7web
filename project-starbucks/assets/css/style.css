@@ -8,6 +8,7 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+/* ========== Header =================== */
 header .line {
   background-color: #117050;
   height: 10px;
@@ -33,15 +34,15 @@ header .line {
 
 .header-buscar form {
   display: flex;
+  width: 100%;
 }
 
 .header-buscar input {
   font-size: 16px;
-  padding: 7px 10px;
+  padding: 10px 13px;
   border: 1px solid #eaeaea;
   outline: none;
   width: 100%;
-  max-width: 220px;
   border-radius: 4px;
 }
 
@@ -80,5 +81,35 @@ header .line {
 }
 
 .header-direita .menu img {
-  width: 20px;
+  width: 24px;
+  height: 24px;
+}
+
+/* ====================== HERO ========================== */
+.hero {
+  background: url("../imgs/bg.jpg") no-repeat center/cover;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  padding-left: 60px;
+}
+
+.hero h1 {
+  font-size: 96px;
+  line-height: 96%;
+  font-weight: 700;
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 20px;
+}
+
+.hero-img {
+  display: flex;
+  gap: 60px;
+  margin-top: 60px;
+}
+
+.hero-img img {
+  width: 148px;
+  height: 148px;
+  border-radius: 50%;
+  border: 7px solid #117050;
 }
