@@ -294,10 +294,11 @@ header .line {
 .area4 .container {
   background-color: #e8e9ee;
   padding-inline: 60px;
+  padding-bottom: 60px;
 }
 
 .area4 .container h2 {
-  margin-top: 120px;
+  margin-top: 200px;
   font: 700 38px/120% "Oswald", sans-serif;
   position: relative;
   text-transform: capitalize;
@@ -316,4 +317,26 @@ header .line {
 
 .area4 .container p {
   font: 400 14px/150% "Open Sans", sans-serif;
+}
+
+footer {
+  background-color: #023524;
+  text-align: center;
+}
+
+footer img {
+  padding-top: 30px;
+  margin-bottom: 30px;
+}
+
+footer p {
+  background-color: #00140e;
+  padding-block: 5px;
+  color: #e8e9ee59;
+  font: 400 14px/150% "Open Sans", sans-serif;
+}
+
+footer p span {
+  color: #e8e9ee;
+  font-weight: 500;
 }
