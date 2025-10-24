@@ -150,21 +150,11 @@ header .line {
 }
 
 .area1-container h2 {
-  margin-top: 120px;
+  padding-top: 120px;
   font: 700 48px/120% "Oswald", sans-serif;
   position: relative;
   text-transform: capitalize;
   margin-bottom: 30px;
-}
-
-.area1-container h2::before {
-  content: "";
-  position: absolute;
-  width: 190px;
-  height: 18px;
-  top: -25px;
-  left: 0;
-  background-color: #117050;
 }
 
 .area1-container span {
@@ -207,21 +197,11 @@ header .line {
 }
 
 .area2-container h2 {
-  margin-top: 120px;
+  padding-top: 120px;
   font: 700 48px/120% "Oswald", sans-serif;
   position: relative;
   text-transform: capitalize;
   margin-bottom: 30px;
-}
-
-.area2-container h2::before {
-  content: "";
-  position: absolute;
-  width: 190px;
-  height: 18px;
-  top: -25px;
-  left: 0;
-  background-color: #117050;
 }
 
 .area2-container p {
@@ -264,7 +244,7 @@ header .line {
 }
 
 .area3 .conteiner h2 {
-  margin-top: 220px;
+  padding-top: 220px;
   font: 700 48px/120% "Oswald", sans-serif;
   position: relative;
   text-transform: capitalize;
@@ -298,27 +278,18 @@ header .line {
 }
 
 .area4 .container h2 {
-  margin-top: 200px;
+  padding-top: 200px;
   font: 700 38px/120% "Oswald", sans-serif;
   position: relative;
   text-transform: capitalize;
   margin-bottom: 30px;
 }
 
-.area4 .container h2::before {
-  content: "";
-  position: absolute;
-  width: 120px;
-  height: 18px;
-  top: -25px;
-  left: 0;
-  background-color: #117050;
-}
-
 .area4 .container p {
   font: 400 14px/150% "Open Sans", sans-serif;
 }
 
+/* =========== FOOTER ========================== */
 footer {
   background-color: #023524;
   text-align: center;
@@ -339,4 +310,307 @@ footer p {
 footer p span {
   color: #e8e9ee;
   font-weight: 500;
+}
+
+@media (max-width: 1025px) {
+  .area1-container p {
+    width: 40ch;
+  }
+
+  .area2-container p {
+    width: 40ch;
+  }
+
+  .area3 .conteiner p {
+    width: 40ch;
+  }
+
+  .area4 {
+    display: grid;
+    grid-template-columns: 35% 1fr;
+  }
+}
+
+@media (max-width: 800px) {
+  .hero {
+    background: url("../imgs/bg.jpg") no-repeat 45% center/cover;
+    padding-left: 20px;
+  }
+
+  .hero h1 {
+    font-size: 76px;
+  }
+
+  .hero span {
+    display: inline-block;
+    width: 45ch;
+  }
+
+  .hero-img {
+    gap: 15px;
+  }
+
+  .hero-img img {
+    width: 128px;
+    height: 128px;
+    border: 5px solid #117050;
+  }
+
+  /*  =====================    AREA 1 ========================== */
+
+  .area1 .area1-container {
+    padding-inline: 30px;
+  }
+
+  .area1-container h2 {
+    padding-top: 90px;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .area1-container h2::before {
+    width: 120px;
+    height: 13px;
+  }
+
+  .area1-container span {
+    font-size: 13px;
+    margin-bottom: 15px;
+  }
+
+  .area1-container p {
+    font: 400 14px/150% "Open Sans", sans-serif;
+    width: 30ch;
+    margin-bottom: 15px;
+  }
+
+  .area1-container p strong {
+    color: #19815e;
+  }
+
+  .area1 .area1-img2 {
+    height: 290px;
+  }
+
+  .btn {
+    font-weight: 300;
+    padding: 5px 35px;
+    margin-block: 15px 45px;
+    display: inline-block;
+  }
+
+  /*  =====================    AREA 2 ========================== */
+
+  .area2 .area2-container {
+    padding-inline: 30px;
+  }
+
+  .area2-container h2 {
+    padding-top: 90px;
+    font-size: 28px;
+    margin-bottom: 20px;
+    padding: 30px;
+  }
+
+  .area2-container p {
+    font: 400 14px/150% "Open Sans", sans-serif;
+    width: 30ch;
+    margin-bottom: 15px;
+    margin: auto;
+  }
+
+  .area2 .area1-img2 {
+    background: url("../imgs/f2.jpg") no-repeat center/cover;
+    height: 290px;
+  }
+
+  /* ====================  AREA 3 ======================= */
+
+  .area3 .conteiner {
+    padding-inline: 30px;
+    padding-bottom: 90px;
+    overflow: visible;
+    margin: auto;
+  }
+
+  .area3 .conteiner h2 {
+    padding-top: 100px;
+    font-size: 48px;
+    margin-bottom: 30px;
+  }
+
+  .area3 .conteiner p {
+    width: 40ch;
+    margin-bottom: 20px;
+  }
+
+  .area3 .conteiner a {
+    margin-bottom: 60px;
+  }
+
+  /* ============= AREA 4 ================== */
+  .area4 {
+    display: grid;
+    grid-template-columns: 50% 1fr;
+  }
+
+  .area4 .img {
+    background: url("../imgs/bg3.jpg") no-repeat 5% center / cover;
+  }
+
+  .area4 .container {
+    background-color: #e8e9ee;
+    padding-inline: 30px;
+    padding-bottom: 30px;
+  }
+
+  .area4 .container h2 {
+    padding-top: 100px;
+    font-size: 38px;
+    position: relative;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+  }
+
+  .area4 .container h2::before {
+    width: 120px;
+    height: 13px;
+  }
+
+  .area4 .container p {
+    font-size: 13px;
+  }
+
+  /* =============== footer ========================== */
+  footer p {
+    padding-block: 6px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 470px) {
+  .hero {
+    background: url("../imgs/bg.jpg") no-repeat 55% center/cover;
+    padding-left: 10px;
+  }
+
+  .header-direita {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .container {
+    padding-inline: 20px;
+  }
+
+  .hero h1 {
+    font-size: 46px;
+    width: 10ch;
+  }
+
+  .hero span {
+    display: inline-block;
+    width: 35ch;
+    font-size: 14px;
+  }
+
+  .hero-img {
+    gap: 20px;
+  }
+
+  .hero-img img {
+    width: 98px;
+    height: 98px;
+    border: 3px solid #117050;
+  }
+
+  /*  =====================    AREA 1 ========================== */
+
+  .area1,
+  .area2 {
+    display: block;
+  }
+  .area1 .area1-container,
+  .area3 .conteiner,
+  .area2 .area2-container {
+    padding-inline: 20px;
+  }
+
+  .area1-container h2,
+  .area2-container h2,
+  .area3 .conteiner h2,
+  .area4 .container h2 {
+    padding-top: 60px;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .area2-container h2 {
+    font-size: 23px;
+    padding: 60px 20px 20px;
+  }
+
+  .area1-container p,
+  .area2-container p,
+  .area3 .conteiner p,
+  .area4 .container p {
+    font: 400 14px/150% "Open Sans", sans-serif;
+    width: 40ch;
+    margin-bottom: 25px;
+  }
+
+  .area1-container p strong {
+    color: #19815e;
+  }
+
+  .area2-container h2,
+  .area2-container p {
+    margin-left: 0px;
+    padding-left: 0px;
+  }
+
+  .area1 .area1-img1,
+  .area2 .area2-img1,
+  .area3 .img1 {
+    display: none;
+  }
+
+  .area1 .area1-img2 {
+    height: 200px;
+    background-position: center 65%;
+  }
+
+  .area4 {
+    display: block;
+  }
+
+  .area4 .container {
+    padding-inline: 20px;
+  }
+
+  footer p {
+    font-size: 12px;
+    text-align: center;
+    padding-inline: 40px;
+  }
+}
+
+@media (max-width: 370px) {
+  .hero-img img {
+    width: 78px;
+    height: 78px;
+  }
+
+  .area2-container p {
+    width: 30ch;
+  }
+
+  .area3 .conteiner h2 {
+    width: 20ch;
+  }
+
+  .area3 .conteiner p {
+    width: 30ch;
+  }
 }
