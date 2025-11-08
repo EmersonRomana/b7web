@@ -1,0 +1,128 @@
+/* Importa a fonte futurista */
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Orbitron", sans-serif;
+  height: 100vh;
+  width: 100vw;
+  /* Tela cheia, sem scroll */
+  overflow: hidden;
+
+  /* Fundo espacial */
+  background: radial-gradient(ellipse at bottom, #0b0217, #2a0a4a);
+
+  /* Centraliza a calculadora */
+  display: grid;
+  place-items: center;
+}
+
+.calculator-container {
+  width: 100%;
+  max-width: 450px; /* Limita o tamanho máximo */
+
+  /* O Efeito Glassmorphism (Vidro Fosco) */
+  background: rgba(40, 0, 80, 0.25);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px); /* Para Safari */
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+
+  /* Sombra suave para dar profundidade */
+  box-shadow: 0 8px 32px 0 rgba(128, 0, 255, 0.3);
+
+  overflow: hidden; /* Garante que os filhos não vazem */
+}
+
+/* --- O Visor --- */
+.display {
+  padding: 25px;
+  text-align: right;
+  color: white;
+  word-wrap: break-word;
+  word-break: break-all;
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.previous-operand {
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.6); /* Mais apagado */
+}
+
+.current-operand {
+  font-size: 2.5rem;
+  color: white; /* Cor principal */
+}
+
+/* --- A Grade de Botões --- */
+.buttons-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  padding: 25px;
+}
+
+button {
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+
+  /* Faz os botões ficarem circulares (ou quase) */
+  aspect-ratio: 1 / 1; /* Mantém a proporção 1:1 */
+  border-radius: 50%;
+
+  /* Fundo dos botões (semi-transparente) */
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  transition: all 0.2s ease;
+}
+
+/* Efeito de brilho ao passar o mouse */
+button:hover {
+  background: rgba(255, 255, 255, 0.15);
+  /* O brilho neon */
+  box-shadow: 0 0 15px 0 rgba(170, 0, 255, 0.7);
+}
+
+button:active {
+  transform: scale(0.95); /* Efeito de clique */
+}
+
+/* Para botões que ocupam 2 espaços */
+.span-two {
+  grid-column: span 2;
+  aspect-ratio: 2 / 1; /* Proporção 2:1 */
+  border-radius: 40px; /* Mais ovalado */
+}
+
+/* Cor diferente para botões de função */
+button[data-operation] {
+  color: #00e5ff; /* Ciano Neon */
+}
+
+button[data-all-clear],
+button[data-delete] {
+  color: #ff007b; /* Magenta Neon */
+}
+
+button[data-equals] {
+  background-color: rgba(170, 0, 255, 0.5); /* Roxo Neon */
+}
+
+button[data-equals]:hover {
+  box-shadow: 0 0 20px 0 rgba(170, 0, 255, 1);
+}
