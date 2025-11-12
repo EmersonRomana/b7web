@@ -1,3 +1,3 @@
-let cores = [branco, azul, vermelho];
+let cores = ["branco", "azul", "vermelho"];
 
 console.log(cores);
