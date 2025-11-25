@@ -4,3 +4,6 @@ console.log(frutas.join(" - ")); // .join() atribui um separador nos elementos d
 const lista = ["leite", "açucar", "feijão", "tempero"];
 lista.sort(); // .sort() Troca a ordem do array
 console.log(lista);
+
+lista.reverse(); // .reverse() deixa em ordem descrecente <-
+console.log(lista);
