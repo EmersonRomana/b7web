@@ -32,5 +32,5 @@ let p1 = new Person("João", "Aguiar");
 let p2 = new Person("Maria", "Silva");
 let p3 = new Person("Pedro", "Arruda");
 
-p1.idade = "abc";
+p1.idade = 20;
 console.log(`${p1.nomeCompleto} tem ${p1.idade} anos`);
