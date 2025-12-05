@@ -1,5 +1,5 @@
 class Pessoa {
-  static maos = 2;
+  static maos = 2; // Aqui diz que esse código é estático
   idade = 0;
 
   constructor(nome) {
@@ -7,7 +7,7 @@ class Pessoa {
   }
 
   digaOi() {
-    console.log(`Oi, eu sou o ${this.nome} e tenho ${Pessoa.maos} mãos`);
+    console.log(`Oi, eu sou o ${this.nome} e tenho ${Pessoa.maos} mãos`); // Para usar a parte estática tenho que vincular na classe Pessoa e não no this.maos
   }
 }
 
