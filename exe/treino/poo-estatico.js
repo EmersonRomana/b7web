@@ -1,5 +1,5 @@
 class Pessoa {
-  static maos = 2; // Aqui diz que esse código é estático
+  static maos = 2; // Aqui diz que esse código é estático (O estático ele se transforma em um objeto geral)
   idade = 0;
 
   constructor(nome) {
