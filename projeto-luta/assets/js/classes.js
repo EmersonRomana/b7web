@@ -38,3 +38,23 @@ class Mago extends Character {
     this.maxLife = this.life;
   }
 }
+
+class MonstroPequeno extends Character {
+  constructor() {
+    super("Chacal Esqueleto");
+    this.life = 70;
+    this.attack = 2;
+    this.defense = 4;
+    this.maxLife = this.life;
+  }
+}
+
+class Boss extends Character {
+  constructor() {
+    super("Litch Infernal");
+    this.life = 300;
+    this.attack = 7;
+    this.defense = 2;
+    this.maxLife = this.life;
+  }
+}
